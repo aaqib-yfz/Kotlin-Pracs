@@ -57,4 +57,72 @@ fun main(){
 //
 //    val value = true
 //    println("$value || false")
+
+    //functions
+//
+//        fun goToStore(storeName:String){
+//            println("Go to $storeName")
+//
+//        }
+//
+//    goToStore("avon")
+
+//fun doubleIt( value : Int) : Int{
+//
+//    return value*2
+//}
+//    print( doubleIt(2))
+
+
+//    fun random( age:Int , name:String){
+//        println("The age of $name is $age")
+//    }
+//
+//    random(23,"aaqib")
+
+//    fun fact( number:Int){
+//
+//        var n = 1
+//        for( i in 1..number ){
+//            n*= i;
+//        }
+//        print(n)
+//    }
+//    fact(3)
+//
+//    val std1  = Student("aizaz",25)
+//    val std2 = Student("anfal",23)
+//    println(std1.showName())
+//    std1.setDomicile("peshawar")
+//    std1.getDomicile()
+
+    val std3 = BsStudent("jango",19,"zuzu")
+    println(std3.showName())
+    std3.setDomicile("torghar")
+    std3.getDomicile()
+    println(std3.getFather())
 }
+
+ public open class Student(
+     private var name : String,
+    private var age : Int
+){
+      private lateinit var domicile :String
+     public fun setDomicile( dom:String){
+         domicile = dom
+     }
+     public fun getDomicile(){
+         println(domicile)
+     }
+     public fun showName():String{
+         return name
+     }
+ }
+
+public class BsStudent(name: String ,age: Int, fatherName:String) : Student(name,age){
+      var nm = fatherName
+    public fun getFather(): String {
+        return nm
+    }
+}
+
