@@ -96,33 +96,46 @@ fun main(){
 //    std1.setDomicile("peshawar")
 //    std1.getDomicile()
 
-    val std3 = BsStudent("jango",19,"zuzu")
-    println(std3.showName())
-    std3.setDomicile("torghar")
-    std3.getDomicile()
-    println(std3.getFather())
+//    val std3 = BsStudent("jango",19,"zuzu")
+//    println(std3.showName())
+//    std3.setDomicile("torghar")
+//    std3.getDomicile()
+//    println(std3.getFather())
+//
+//    val dog1 = Doggie()
+//    dog1.makeNoise()
+}
+//
+// public open class Student(
+//     private var name : String,
+//    private var age : Int
+//){
+//      private lateinit var domicile :String
+//     public fun setDomicile( dom:String){
+//         domicile = dom
+//     }
+//     public fun getDomicile(){
+//         println(domicile)
+//     }
+//     public fun showName():String{
+//         return name
+//     }
+// }
+//
+//public class BsStudent(name: String ,age: Int, fatherName:String) : Student(name,age){
+//      var nm = fatherName
+//    public fun getFather(): String {
+//        return nm
+//    }
+//}
+
+
+public interface Animal{
+    public fun makeNoise()
 }
 
- public open class Student(
-     private var name : String,
-    private var age : Int
-){
-      private lateinit var domicile :String
-     public fun setDomicile( dom:String){
-         domicile = dom
-     }
-     public fun getDomicile(){
-         println(domicile)
-     }
-     public fun showName():String{
-         return name
-     }
- }
-
-public class BsStudent(name: String ,age: Int, fatherName:String) : Student(name,age){
-      var nm = fatherName
-    public fun getFather(): String {
-        return nm
+public class Doggie(): Animal{
+    override fun makeNoise() {
+        println("bhew")
     }
 }
-
