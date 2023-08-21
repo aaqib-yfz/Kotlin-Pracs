@@ -1,7 +1,7 @@
 import java.util.Scanner
 
 // Week 01
-fun main(){
+fun main() {
 
 ////    var name : String = "aaqib"
 ////    var age : Int = 10
@@ -104,7 +104,7 @@ fun main(){
 //
 //    val dog1 = Doggie()
 //    dog1.makeNoise()
-}
+
 //
 // public open class Student(
 //     private var name : String,
@@ -129,13 +129,27 @@ fun main(){
 //    }
 //}
 
+//
+//public interface Animal{
+//    public fun makeNoise()
+//}
+//
+//public class Doggie(): Animal{
+//    override fun makeNoise() {
+//        println("bhew")
+//    }
+//}
 
-public interface Animal{
-    public fun makeNoise()
-}
-
-public class Doggie(): Animal{
-    override fun makeNoise() {
-        println("bhew")
-    }
-}
+//
+//    val cities = listOf(
+//        "Peshawar",
+//        "Kabul",
+//        "Swat"
+//    )
+//
+//    for( element in cities){
+//        println(element)
+////    }
+//    val letters = listOf("A", "B" , "X")
+//    print(letters.contains("A"))
+//}
