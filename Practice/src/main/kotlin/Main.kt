@@ -8,7 +8,7 @@ fun main(){
             val item2= listOf(
             OrderItem("lasagna",5.00),
             OrderItem("paratha",7.00),
-            OrderItem("ungabunga",8.00),
+            OrderItem("ungabunga",29.00),
 
         )
 

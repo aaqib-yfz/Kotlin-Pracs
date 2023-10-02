@@ -1,2 +1,2 @@
 
-data class OrderItem(val name: String, val price: Double)
+data class OrderItems(val name: String, val price: Double)
